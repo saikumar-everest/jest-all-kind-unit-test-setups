@@ -25,6 +25,15 @@ jest.mock('aws-sdk', () => ({
 
 describe('Tests for mocking non-injectable dependencies', () => {
   it('should get all buckets information', async () => {
-    expect(await listAvailableS3Buckets()).toEqual(expected);
+    expect(await listAvailableS3Buckets()).toEqual({
+      Buckets: [
+        {
+          Name: 'test bucket',
+        },
+        {
+          Name: 'another test bucket',
+        },
+      ],
+    });
   });
 });
