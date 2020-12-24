@@ -1,10 +1,10 @@
 # jest-all-kind-unit-test-setups
 
-Purpose of this project is to act as reference for all kind of unit test setups written in jest test framework
+Purpose of this project is to act as reference for all kind of unit test setups written in [Jest](https://jestjs.io/) test framework
 
 We encourage [AAA(Arrange - Act - Assert) format](http://wiki.c2.com/?ArrangeActAssert) for structuring any unit(actually any!) test.
 
-Note: These setups are just one of the possible to write. I agree that, for the same test, one can write with different setup also.
+> Note: These setups are just one of the possible to write. I agree that, for the same test, one can write with different setup also.
 
 ### List of different test setups for scenarios
 
@@ -23,7 +23,7 @@ Test-2: Non-injectable dependencies present. Used automatic mocks.
   // TODO: Failed to add another test with in same describe by making changes to the test setup, that's specific to that particular test. Ex, I want to reject promise for S3.listBuckets()
 
 Test-3: Similar to Test-2, but with different mock setup. Used manual mocks.
- - Similar to Test-2, code under test is making some 3rd party calls. If you think you will use a common setup across for a mock, then we will use manual mocks by moving all the mock data setup to a single place(__mocks__).
+ - Similar to Test-2, code under test is making some 3rd party calls. If you think you will use a common setup across for a mock, then we will use manual mocks by moving all the mock data setup to a single place(`__mocks__ /` which is to the same level of `node_modules/`).
 
 Test-4: Non-injectable dependencies with a defaultly exported lib(ex, axios)
 
