@@ -6,7 +6,7 @@ describe('Tests for code that has injectable dependency, but that dependency has
   let userController: UserController;
 
   beforeEach(() => {
-    // We didn't care about what are all the dependencies(N+2 nd level) for UserService.
+    // We didn't care about what are all the (N+2 nd level)dependencies for UserService.
     // Because it's unnecessary to think about them in these(N th level) unit tests
     mockedService = jest.genMockFromModule<UserService>('../src/test-5/user.service');
 
