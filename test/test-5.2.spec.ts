@@ -7,7 +7,11 @@ describe('Tests for code throws error', () => {
     userController = new UserController(null);
   });
 
-  it('should throw error', () => {
+  it('should throw error from async method', () => {
+    expect(userController.throwErrorAsync).rejects.toThrow('Internal error!');
+  });
+
+  it('should throw error from syncronous method', () => {
     expect(userController.throwError).toThrow('Internal error!');
   });
 });

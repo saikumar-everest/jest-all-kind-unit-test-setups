@@ -7,6 +7,10 @@ export class UserController {
     return this.service.superActiveUserId();
   }
 
+  async throwErrorAsync() {
+    throw new Error('Internal error!');
+  }
+
   throwError() {
     throw new Error('Internal error!');
   }

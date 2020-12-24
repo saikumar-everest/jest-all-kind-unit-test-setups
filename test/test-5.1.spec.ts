@@ -14,6 +14,6 @@ describe('Tests for code that has injectable dependency, but that dependency has
   it('should reject promise', async () => {
     mockedService.superActiveUserId = jest.fn().mockRejectedValue('Error: Slack service not present');
 
-    await expect(userController.getSuperActiveUserId()).rejects.toEqual('Error: Slack service not present');
+    expect(userController.getSuperActiveUserId()).rejects.toEqual('Error: Slack service not present');
   });
 });
