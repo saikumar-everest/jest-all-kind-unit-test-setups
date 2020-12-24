@@ -4,7 +4,7 @@ Purpose of this project is to act as reference for all kind of unit test setups 
 
 We encourage [AAA(Arrange - Act - Assert) format](http://wiki.c2.com/?ArrangeActAssert) for structuring any unit(actually any!) test.
 
-> Note: These setups are just one of the possible to write. I agree that, for the same test, one can write with different setup also.
+> Note: These setups are just some of the possible to write. I agree that, for the same test, one can write with many different setups also.
 
 ### List of different test setups for scenarios
 
@@ -26,6 +26,8 @@ Test-3: Similar to Test-2, but with different mock setup. Used manual mocks.
  - Similar to Test-2, code under test is making some 3rd party calls. If you think you will use a common setup across code for a lib mock, then we will use manual mocks by moving all the mock data setup to a single place(`__mocks__ /` which is to the same level of `node_modules/`).
 
 Test-4: Non-injectable dependencies with a defaultly exported lib(ex, axios)
+
+Test-5: Same as Test-4, but done with different test setup.
 
 Test-5: Injectable dependency. Avoid mocking all the dependencies that are needed to instantiate an object.
 
