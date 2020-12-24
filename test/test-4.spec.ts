@@ -23,12 +23,12 @@ describe('Tests for mocking non-injectable dependencies where it is a defaultly 
 
     const users = await userService.getUsers();
 
+    expect(axiosGet).toHaveBeenCalledWith('/api/users');
     expect(users).toEqual([
       {
         userId: 45,
         name: 'Someone',
       },
     ]);
-    expect(axiosGet).toHaveBeenCalledWith('/api/users');
   });
 });

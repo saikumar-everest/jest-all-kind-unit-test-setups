@@ -11,11 +11,12 @@ const expected = {
     },
   ],
 } as ListBucketsOutput;
+const promiseFn = jest.fn();
 
 function mockedS3Instance() {
   return {
     listBuckets: jest.fn().mockReturnThis(),
-    promise: jest.fn().mockResolvedValue(expected),
+    promise: promiseFn.mockResolvedValue(expected),
   };
 }
 
@@ -35,5 +36,6 @@ describe('Tests for mocking non-injectable dependencies', () => {
         },
       ],
     });
+    expect(promiseFn).toBeCalled();
   });
 });

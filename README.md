@@ -23,7 +23,7 @@ Test-2: Non-injectable dependencies present. Used automatic mocks.
   // TODO: Failed to add another test with in same describe by making changes to the test setup, that's specific to that particular test. Ex, I want to reject promise for S3.listBuckets()
 
 Test-3: Similar to Test-2, but with different mock setup. Used manual mocks.
- - Similar to Test-2, code under test is making some 3rd party calls. If you think you will use a common setup across for a mock, then we will use manual mocks by moving all the mock data setup to a single place(`__mocks__ /` which is to the same level of `node_modules/`).
+ - Similar to Test-2, code under test is making some 3rd party calls. If you think you will use a common setup across code for a lib mock, then we will use manual mocks by moving all the mock data setup to a single place(`__mocks__ /` which is to the same level of `node_modules/`).
 
 Test-4: Non-injectable dependencies with a defaultly exported lib(ex, axios)
 

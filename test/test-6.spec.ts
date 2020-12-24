@@ -7,6 +7,7 @@ describe('Tests for mocking local util methods thats been used in another util m
 
     const actual = getCallOnFutureMultibaggerStock();
 
+    expect(originalModule.findFutureMultibaggerStock).toBeCalled();
     expect(actual).toEqual({
       call: TradeCall.BUY,
     });
