@@ -26,3 +26,9 @@ Test-3: Similar to Test-2, but with different mock setup. Used manual mocks.
  - Similar to Test-2, code under test is making some 3rd party calls. If you think you will use a common setup across for a mock, then we will use manual mocks by moving all the mock data setup to a single place(__mocks__).
 
 Test-4: Non-injectable dependencies with a defaultly exported lib(ex, axios)
+
+Test-5: Injectable dependency. Avoid mocking all the dependencies that are needed to instantiate an object.
+
+Test-5.1: Promise rejection assertion
+
+Test-5.2: Thrown error assertion
