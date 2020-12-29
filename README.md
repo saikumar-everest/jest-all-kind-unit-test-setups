@@ -46,3 +46,19 @@ Test-8: Expect a method to be called upon anonymous instance of a class
 
 Test-9: Mock only part of the module.
  - Sometimes, we want to mock only part of exported methods or classes from a lib. We should use jest.requireActual() for the imports that we don't want to mock.
+
+
+
+
+
+
+### How to run tests
+
+1. Install dependencies
+``` yarn ```
+
+2. Run tests
+``` yarn test ```
+
+3. Run a single test
+``` yarn test test/test-1.spec.ts ```
