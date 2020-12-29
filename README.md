@@ -37,3 +37,9 @@ Test-5.2: Thrown error assertion
 
 Test-6: Non-injectable local util methods mocking
  - Code under test will use few util methods in it, where they do complex work and return a simple result that will be used as input to process further. Here we assume that, these complex util methods are already tested, we don't want to test them here.
+
+Test-7: Expect static method to be called
+ - Code under test is making call to a static method, and we want to expect it to be called.
+
+Test-8: Expect a method to be called upon anonymous instance of a class
+ - Code under test is creating an instance of a class and calls a method on it. We will expect that method to be called.
