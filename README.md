@@ -20,4 +20,4 @@ Visit each folder and you should find a brief description about the test scenari
 ``` yarn test ```
 
 3. Run a single test
-``` yarn test test/test-1.spec.ts ```
+``` yarn test anonymous-instance-mock/caller.spec.ts ```
