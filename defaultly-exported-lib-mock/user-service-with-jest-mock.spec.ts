@@ -1,5 +1,5 @@
 import axios from 'axios'; // Default import
-import {UserService} from '../src/test-4';
+import {UserService} from './user-service';
 
 jest.mock('axios');
 

@@ -1,5 +1,5 @@
-import {findAndPreparePdfByName} from '../src/test-7/file-utils';
-import {PdfTransformer} from '../src/test-7/pdf-transformer';
+import {findAndPreparePdfByName} from './file-utils';
+import {PdfTransformer} from './pdf-transformer';
 
 describe('Test that expects a static method to be called', () => {
   it('should call transform static method on pdf-transformer', () => {

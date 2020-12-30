@@ -1,4 +1,4 @@
-import {UserController} from '../src/test-5/user.controller';
+import {UserController} from './user.controller';
 
 describe('Tests for code throws error', () => {
   let userController: UserController;

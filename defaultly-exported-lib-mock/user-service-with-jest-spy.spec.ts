@@ -1,5 +1,5 @@
 import axios from 'axios'; // Default import
-import {UserService} from '../src/test-4';
+import {UserService} from './user-service';
 
 describe('Tests for mocking non-injectable dependencies where it is a defaultly exported', () => {
   it('should get all users', async () => {

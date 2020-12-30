@@ -1,4 +1,4 @@
-import {addGivenNumbers} from '../src/test-1';
+import {addGivenNumbers} from './add-numbers';
 
 describe('Test-1 unit tests', () => {
   it('should find sum of given numbers', () => {

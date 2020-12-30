@@ -1,12 +1,12 @@
-import {UserController} from '../src/test-5/user.controller';
-import {UserService} from '../src/test-5/user.service';
+import {UserController} from './user.controller';
+import {UserService} from './user.service';
 
 describe('Tests for code that has injectable dependency, but that dependency has many other dependencies', () => {
   let mockedService: UserService;
   let userController: UserController;
 
   beforeEach(() => {
-    mockedService = jest.genMockFromModule<UserService>('../src/test-5/user.service');
+    mockedService = jest.genMockFromModule<UserService>('./user.service');
 
     userController = new UserController(mockedService);
   });

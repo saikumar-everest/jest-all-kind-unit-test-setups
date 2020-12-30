@@ -1,7 +1,7 @@
-import {Anonymous} from '../src/test-8/anonymous';
-import {Caller} from '../src/test-8/test-8';
+import {Anonymous} from './anonymous';
+import {Caller} from './caller';
 
-jest.mock('../src/test-8/anonymous');
+jest.mock('./anonymous');
 
 describe('Test for creating anonymous class instance and expect a method call on it', () => {
   it('should do anonymous call', () => {

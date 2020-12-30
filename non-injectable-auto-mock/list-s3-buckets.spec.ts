@@ -1,5 +1,5 @@
 import {ListBucketsOutput} from 'aws-sdk/clients/s3';
-import {listAvailableS3Buckets} from '../src/test-2';
+import {listAvailableS3Buckets} from './list-s3-buckets';
 
 const expected = {
   Buckets: [

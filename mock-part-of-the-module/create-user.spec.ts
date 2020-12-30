@@ -1,7 +1,7 @@
 jest.mock('node-fetch');
 
 import fetch from 'node-fetch';
-import {createUser} from '../src/test-9';
+import {createUser} from './create-user';
 const {Response} = jest.requireActual('node-fetch');
 
 test('createUser calls fetch with the right args and returns the user id', async () => {
