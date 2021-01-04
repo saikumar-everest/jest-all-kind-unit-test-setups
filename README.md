@@ -1,6 +1,6 @@
 # jest-all-kind-unit-test-setups
 
-Purpose of this project is to act as reference for all kind of unit test setups written in [Jest](https://jestjs.io/) test framework
+:book: Purpose of this project is to act as reference :notebook: for all kind of unit test setups written in [Jest](https://jestjs.io/) test framework
 
 We encourage [AAA(Arrange - Act - Assert) format](http://wiki.c2.com/?ArrangeActAssert) for structuring any unit(actually any!) test.
 
@@ -11,7 +11,7 @@ We encourage [AAA(Arrange - Act - Assert) format](http://wiki.c2.com/?ArrangeAct
 Visit each folder and you should find a brief description about the test scenario and test setup.
 
 
-### How to run tests
+### :gear: How to run tests
 
 1. Install dependencies
 ``` yarn ```
